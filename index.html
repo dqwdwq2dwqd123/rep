@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria's Med Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Maria's 💖 Med Quiz</h1>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What germ cells are primary producers of hCG?</p>
+          <label
+            ><input type="radio" name="q1" value="syncytiotrophoblast" />
+            Syncytiotrophoblast</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="cytotrophoblast" />
+            Cytotrophoblast</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="epiblast" /> Epiblast</label
+          >
+        </div>
+        <div class="question">
+          <p>2. What is the role of oxytocin and where is it produced?</p>
+          <label
+            ><input
+              type="radio"
+              name="q2"
+              value="start contractions & posterior pituitary gland"
+            />
+            Start contractions & posterior pituitary gland</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="q2"
+              value="milk ejection & anterior pituitary gland"
+            />
+            Milk ejection & anterior pituitary gland</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="q2"
+              value="stimulate follicles & hypothalamus"
+            />
+            Stimulate follicles & hypothalamus</label
+          >
+        </div>
+        <div class="question">
+          <p>3. Which aspect of the ANS innervates an erection?</p>
+          <label
+            ><input type="radio" name="q3" value="parasympathetic S2 & S3" />
+            Parasympathetic S2 & S3</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="sympathetic T11-L2" />
+            Sympathetic T11-L2</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="somatic L4" /> Somatic
+            L4</label
+          >
+        </div>
+        <div class="question">
+          <p>
+            4. What cells are the primary contributors to sperm production in
+            epididymis?
+          </p>
+          <label
+            ><input type="radio" name="q4" value="Sertoli cells" /> Sertoli
+            cells</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="Leydig cells" /> Leydig
+            cells</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="Basal cells" /> Basal
+            cells</label
+          >
+        </div>
+        <div class="question">
+          <p>5. What does Type A spermatogonia mature into?</p>
+          <label
+            ><input type="radio" name="q5" value="more spermatogonia" /> More
+            spermatogonia</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="spermatocytes" />
+            Spermatocytes</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="spermatozoa" />
+            Spermatozoa</label
+          >
+        </div>
+        <div class="question">
+          <p>6. What epithelium lines the epididymis?</p>
+          <label
+            ><input
+              type="radio"
+              name="q6"
+              value="pseudostratified column epithelium with stereocilia"
+            />
+            Pseudostratified column epithelium with stereocilia</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="simple cuboidal" /> Simple
+            cuboidal</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="transitional epithelium" />
+            Transitional epithelium</label
+          >
+        </div>
+        <button type="button" onclick="checkAnswers()">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
