@@ -1,15 +1,16 @@
+/* Base styles */
 body {
   background: pink;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: start; /* Start instead of center to avoid content getting cut off */
-  min-height: 100vh;
+  display: block; /* Avoid flex on mobile to prevent hidden content */
+  min-height: 100dvh; /* Mobile-safe height */
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+/* Container for the quiz */
 .quiz-container {
   background: #fff0f5;
   border: 5px dashed hotpink;
@@ -19,14 +20,20 @@ body {
   animation: fadeIn 1s ease-in;
   width: 90%;
   max-width: 600px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 40px auto; /* Adds spacing from top, centres it */
 }
 
+/* Heading style */
 h1 {
   font-size: 1.8rem;
   text-align: center;
   word-wrap: break-word;
+  margin-top: 0;
+}
+
+/* Question formatting */
+.question {
+  margin-bottom: 20px;
 }
 
 .question p {
@@ -34,11 +41,13 @@ h1 {
   font-weight: bold;
 }
 
+/* Radio button labels */
 label {
   display: block;
   margin-bottom: 8px;
 }
 
+/* Submit button */
 button {
   background-color: hotpink;
   color: white;
@@ -55,12 +64,19 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Make things more touch-friendly and readable on small screens */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
