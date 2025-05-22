@@ -1,7 +1,7 @@
 /* Base styles */
 body {
   background: pink;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   display: block; /* Avoid flex on mobile to prevent hidden content */
